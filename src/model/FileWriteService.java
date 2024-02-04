@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FileWriteService {
-    public void createAndWriTeFile(String fileName, String text) {
+    public static void createAndWriTeFile(String fileName, String text) {
         Path path = Paths.get(PathForFiles.BASE_URL + fileName + ".txt");
         try {
             Files.createFile(path);
