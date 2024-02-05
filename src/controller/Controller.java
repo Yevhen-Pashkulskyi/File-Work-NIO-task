@@ -33,5 +33,7 @@ public class Controller {
             default:
                 System.out.println("Невірний вибір. Спробуйте ще.");
         }
+        scanner.close();
     }
+
 }
