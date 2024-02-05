@@ -16,13 +16,15 @@ public class View {
         controller.showMenu();
 
         int choice = scanner.nextInt();
-        while (choice != 0) {
-            controller.choiceOption(choice);
-            controller.showMenu();
-
-            choice = scanner.nextInt();
-        }
-        scanner.close();
-        System.out.println("Програма завершена.");
+//        while (choice != 0) {
+//            controller.choiceOption(choice);
+//            System.out.println();
+//            controller.showMenu();
+//
+//            choice = scanner.nextInt();
+//        }
+//        scanner.close();
+//        System.out.println("Програма завершена.");
+        controller.choiceOption(choice);
     }
 }

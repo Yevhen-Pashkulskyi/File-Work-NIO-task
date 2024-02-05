@@ -6,15 +6,17 @@ import model.FileWriteService;
 import java.util.Scanner;
 
 public class Controller {
-    Scanner scanner = new Scanner(System.in);
 
     public void showMenu() {
-        System.out.println("1. Створити та записати");
-        System.out.println("2. Зчитати");
-        System.out.println("0. Вичід");
+        System.out.println("1. Створити та записати файл");
+        System.out.println("2. Зчитати файл");
+//        System.out.println("0. Вихід з програми");
+
+        System.out.print("Виберіть пункт із меню: ");
     }
 
     public void choiceOption(int choice) {
+        Scanner scanner = new Scanner(System.in);
         switch (choice) {
             case 1:
                 System.out.println("ВВедіть назву файлу (без розширення):");
