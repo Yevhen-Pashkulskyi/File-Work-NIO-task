@@ -35,7 +35,11 @@ public class MenuAndOptional {
 
                 FileReadService fileReadService = new FileReadService();
                 String readText = fileReadService.readFile(fileName);
-                System.out.println(readText);
+                if (readText != null){
+                    System.out.println(readText);
+                }else {
+                    System.out.println(fileName + " : null");
+                }
                 break;
             default:
                 System.out.println("Невірний вибір. Спробуйте ще.");
