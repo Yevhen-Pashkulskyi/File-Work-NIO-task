@@ -1,17 +1,17 @@
-package view;
+package controller;
 
-import controller.Controller;
+import view.MenuAndOptional;
 import model.FileReadService;
 import model.FileWriteService;
 
 import java.util.Scanner;
 
-public class View {
+public class RunProgram {
     public void run() {
-        FileReadService fileReadService = new FileReadService();
-        FileWriteService fileWriteService = new FileWriteService();
+//        FileReadService fileReadService = new FileReadService();
+//        FileWriteService fileWriteService = new FileWriteService();
         Scanner scanner = new Scanner(System.in);
-        Controller controller = new Controller();
+        MenuAndOptional controller = new MenuAndOptional();
 
         controller.showMenu();
 

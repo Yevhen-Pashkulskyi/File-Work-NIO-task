@@ -1,8 +1,8 @@
-import view.View;
+import controller.RunProgram;
 
 public class StartPrograms {
     public static void main(String[] args) {
-        View view = new View();
+        RunProgram view = new RunProgram();
         view.run();
     }
 }
