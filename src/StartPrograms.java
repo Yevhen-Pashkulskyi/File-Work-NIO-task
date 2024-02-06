@@ -2,7 +2,7 @@ import controller.RunProgram;
 
 public class StartPrograms {
     public static void main(String[] args) {
-        RunProgram view = new RunProgram();
-        view.run();
+        RunProgram runProgram = new RunProgram();
+        runProgram.run();
     }
 }
